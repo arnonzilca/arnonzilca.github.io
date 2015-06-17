@@ -1,0 +1,13 @@
+# Site settings
+title: Constant Arguments
+email: az7201221@gmail.com
+description: "A programing blog"
+baseurl: ""
+url: "http://arnonzilca.github.io"
+github_username:  arnonzilca
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+excerpt_separator: ''
