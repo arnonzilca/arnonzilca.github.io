@@ -6,6 +6,9 @@ description: "A programing blog"
 baseurl: ""
 url: "http://arnonzilca.github.io"
 github_username:  arnonzilca
+stackoverflow_username:  arnonzilca
+stackoverflow_usernum:  3374591
+linkedin_username: arnonzilca
 
 # Build settings
 markdown: kramdown

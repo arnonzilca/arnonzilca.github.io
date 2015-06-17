@@ -122,6 +122,8 @@ a:visited { color: #205caa; }
   color: #828282;
 }
 
+.stackoverflow-icon-svg,
+.linkedin-icon-svg,
 .github-icon-svg,
 .twitter-icon-svg {
   display: inline-block;
