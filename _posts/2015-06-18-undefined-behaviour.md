@@ -90,5 +90,6 @@ When I ran the full example (with copy c'tor and c'tors prints) I got the follow
 >in copy c'tor<br>
 >0
 
-What this meant is that the copy c'tor was called for an object `Foo` without ever calling `Foo`'s c'tor!<br>
+What this meant is that the copy c'tor was called for an object `Foo` without ever calling `Foo`'s c'tor!
+
 *Ergo, a `Foo` was present without it ever being created - [Creation ex nihilo](https://en.wikipedia.org/wiki/Ex_nihilo)*.
