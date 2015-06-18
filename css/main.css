@@ -122,17 +122,6 @@ a:visited { color: #205caa; }
   color: #828282;
 }
 
-.stackoverflow-icon-svg,
-.linkedin-icon-svg,
-.github-icon-svg,
-.twitter-icon-svg {
-  display: inline-block;
-  WIDth: 32px;
-  height: 32px;
-  position: relative;
-  top: 3px;
-}
-
 .svg-icon {
   width: 35px;
   height: 35px;
@@ -181,6 +170,10 @@ a:visited { color: #205caa; }
   color: #818181;
 }
 
+.text-span {
+    display: inline-block
+    vertical-align: middle
+}
 
 /* Post styles */
 /* ----------------------------------------------------------*/
