@@ -12,8 +12,8 @@
     </div>
 
     <div class="footer-col-2 column">
-      <ul>
-        {% if site.github_username %}<li>
+      <ul><li>
+        {% if site.github_username %}
           <a href="https://github.com/{{ site.github_username }}" title="GitHub">
             <span class="icon github">
               <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -31,8 +31,8 @@
               </svg>
             </span>
           </a>
-        </li>{% endif %}
-        {% if site.stackoverflow_username %}<li>
+        {% endif %}
+        {% if site.stackoverflow_username %}
           <a href="https://stackoverflow.com/users/{{ site.stackoverflow_usernum }}" title="StackOverflow">
             <span class="icon stackoverflow">
               <svg version="1.1" class="stackoverflow-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -46,8 +46,9 @@
               </svg>
             </span>
           </a>
-        </li>{% endif %}
-        {% if site.linkedin_username %}<li>
+        {% endif %}
+        </li><li>
+        {% if site.linkedin_username %}
           <a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
             <span class="icon linkedin">
               <svg version="1.1" class="linkedin-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -60,8 +61,8 @@
               </svg>
             </span>
           </a>
-        </li>{% endif %}
-        {% if site.twitter_username %}<li>
+        {% endif %}
+        {% if site.twitter_username %}
           <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter">
             <span class="icon twitter">
               <svg version="1.1" class="twitter-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -76,7 +77,8 @@
               </svg>
             </span>
           </a>
-        </li>{% endif %}
+        {% endif %}
+        </li>
       </ul>
     </div>
 
