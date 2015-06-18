@@ -133,6 +133,9 @@ a:visited { color: #205caa; }
   top: 3px;
 }
 
+.username {
+  vertical-align: middle;
+}
 
 /* Page Content styles */
 /* ----------------------------------------------------------*/
