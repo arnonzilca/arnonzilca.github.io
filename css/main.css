@@ -134,8 +134,10 @@ a:visited { color: #205caa; }
 }
 
 .svg-icon {
-    color: #C2C2C2
-    fill: #C2C2C2
+  width: 32px;
+  height: 32px;
+  color: #C2C2C2
+  fill: #C2C2C2
 }
 
 .svg-icon:hover {
