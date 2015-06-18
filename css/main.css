@@ -127,8 +127,8 @@ a:visited { color: #205caa; }
 .github-icon-svg,
 .twitter-icon-svg {
   display: inline-block;
-  WIDth: 18px;
-  height: 18px;
+  WIDth: 24px;
+  height: 24px;
   position: relative;
   top: 3px;
 }

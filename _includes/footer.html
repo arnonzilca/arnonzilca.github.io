@@ -15,6 +15,7 @@
       <ul>
         {% if site.github_username %}<li>
           <a href="https://github.com/{{ site.github_username }}">
+              <table><tr><td>
             <span class="icon github">
               <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 512 512" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -29,8 +30,9 @@
                 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9
                 358.6 70.7 256 70.7z"/>
               </svg>
-            </span>
+            </span></td><td>
             <span class="username">{{ site.fullname }}</span>
+            </td></tr></table>
           </a>
         </li>{% endif %}
         {% if site.stackoverflow_username %}<li>
