@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Undefined Behaviour - Foo Ex nihilo"
+title: "Undefined Behaviour - Foo Ex Nihilo"
 tags: [code, c++]
 ---
 
@@ -17,7 +17,7 @@ shorter and/or more efficient assembly.
 Despite what most might think, avoiding undefined behaviour **completely** is not as easy as it
 seems. If this statement sounds bogus to you, I implore you to check out this
 [stackoverflow question](http://goo.gl/Bcqi3y) explaining how excruciating it could be to convert a
-double (ANY double) to an integer without invoking undefined behaviour *at all*. Note that it took
+double (ANY double) to an integer without invoking undefined behaviour **at all**. Note that it took
 more than a month for this question to be finally answered by the op himself.
 
 Case Study
@@ -87,9 +87,8 @@ Weird huh?<br>
 Cause `Foo`'s `x` is initialized to 3 in the c'tor.
 When I ran the full example (with copy c'tor and c'tors prints) I got the following result:
 
->in copy c'tor
+>in copy c'tor<br>
 >0
 
-What this meant is that the copy c'tor was called for an object `Foo` without ever calling `Foo`'s
-c'tor!
-Ergo, a `Foo` was present without it ever being created. [Creation ex nihilo](https://en.wikipedia.org/wiki/Ex_nihilo).
+What this meant is that the copy c'tor was called for an object `Foo` without ever calling `Foo`'s c'tor!<br>
+*Ergo, a `Foo` was present without it ever being created - [Creation ex nihilo](https://en.wikipedia.org/wiki/Ex_nihilo)*.
