@@ -170,16 +170,8 @@ a:visited { color: #205caa; }
   color: #818181;
 }
 
-.vertical-aligner {
-    width: 100%;
-    height: 100%;
-    display: table;
-    text-align: center;
-}
-
-.vertical-aligner > .text-span {
-    display: inline-block
-    vertical-align: middle
+.rss-subscribe {
+    line-height: 1.5;
 }
 
 /* Post styles */
