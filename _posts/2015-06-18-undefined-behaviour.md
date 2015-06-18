@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Undefined Behaviour - Foo Ex Nihilo"
-tags: [code, c++]
+tags: [code, c++, stl]
 ---
 
 Backgroud
