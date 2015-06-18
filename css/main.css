@@ -133,6 +133,29 @@ a:visited { color: #205caa; }
   top: 3px;
 }
 
+.soc a {
+  position: relative;
+  height: 96px;
+  height: 9.6rem;
+  width: 96px;
+  width: 9.6rem;
+}
+.soc svg {
+  height: 100%;
+  width: 100%;
+}
+.soc em {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -0.75em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .icon {
     color: #C2C2C2
     fill: #C2C2C2
