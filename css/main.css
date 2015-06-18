@@ -133,6 +133,15 @@ a:visited { color: #205caa; }
   top: 3px;
 }
 
+.icon:hover {
+  border-radius: 100%;
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+}
+
 /* Page Content styles */
 /* ----------------------------------------------------------*/
 

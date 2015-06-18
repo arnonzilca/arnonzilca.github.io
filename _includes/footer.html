@@ -14,8 +14,8 @@
     <div class="footer-col-2 column">
       <ul>
         {% if site.github_username %}<li>
-          <a href="https://github.com/{{ site.github_username }}">
-            <span class="icon github" style="vertical-align: middle">
+          <a href="https://github.com/{{ site.github_username }}" title="GitHub">
+            <span class="icon github">
               <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 512 512" enable-background="new 0 0 16 16" xml:space="preserve">
                 <path fill-rule="evenodd" clip-rule="evenodd" fill="#C2C2C2" d="M256 70.7c-102.6
@@ -30,12 +30,10 @@
                 358.6 70.7 256 70.7z"/>
               </svg>
             </span>
-            <span class="username" style="vertical-align: middle">{{ site.fullname }}</span>
           </a>
         </li>{% endif %}
         {% if site.stackoverflow_username %}<li>
-          <a href="https://stackoverflow.com/users/{{ site.stackoverflow_usernum }}">
-           <table><tr><td>
+          <a href="https://stackoverflow.com/users/{{ site.stackoverflow_usernum }}" title="StackOverflow">
             <span class="icon stackoverflow">
               <svg version="1.1" class="stackoverflow-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 512 512" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -46,14 +44,11 @@
                 14.7 68.7 100.8L346.9 219.7zM315.5
                 275.5v106.5H155.6V275.5h-20.8v126.9h201.5V275.5H315.5z"/>
               </svg>
-            </span></td><td>
-            <span class="username">{{ site.fullname }}</span>
-            </td></tr></table>
+            </span>
           </a>
         </li>{% endif %}
         {% if site.linkedin_username %}<li>
-          <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
-           <table><tr><td>
+          <a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
             <span class="icon linkedin">
               <svg version="1.1" class="linkedin-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 512 512" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -63,14 +58,11 @@
                 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0
                 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/>
               </svg>
-            </span></td><td>
-            <span class="username">{{ site.fullname }}</span>
-            </td></tr></table>
+            </span>
           </a>
         </li>{% endif %}
         {% if site.twitter_username %}<li>
-          <a href="https://twitter.com/{{ site.twitter_username }}">
-           <table><tr><td>
+          <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter">
             <span class="icon twitter">
               <svg version="1.1" class="twitter-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -82,9 +74,7 @@
                 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469
                 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
               </svg>
-            </span></td><td>
-            <span class="username">{{ site.fullname }}</span>
-            </td></tr></table>
+            </span>
           </a>
         </li>{% endif %}
       </ul>
