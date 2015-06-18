@@ -5,9 +5,11 @@ fullname: Arnon Zilca
 description: "A sufficient but not entirely necessary programing blog. The author of this blog does not like writing in 3rd person."
 baseurl: ""
 url: "http://arnonzilca.github.io"
+
 github_username: arnonzilca
 stackoverflow_username: 3374591
 linkedin_username: arnonzilca
+googleplus_username: ArnonZilca
 
 # Build settings
 markdown: kramdown
