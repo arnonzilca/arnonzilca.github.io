@@ -9,7 +9,7 @@ Backgroud
 
 We all know of the dangerous dark path named *Undefined Behaviour*.
 
-It happens at the edges of a standard when the ladder does not define (or defines to NOT define) a
+It happens at the edges of a standard when said standatd does not define (or defines to NOT define) a
 certain use case. The reason for this is mainly optimization - When some edge cases are not defined,
 the library / compiler is free to ignore them in any way its developers see fit, and thus create
 shorter and/or more efficient assembly.
@@ -23,7 +23,7 @@ more than a month for this question to be finally answered by the op himself.
 Case Study
 ----------
 
-Programers are taught to fear undefined behaviour (and righteously so), and while it might be interesting
+Programmers are taught to fear undefined behaviour (and rightly so), and while it might be interesting
 to explore ways to avoid undefined behaviour, it would be a lot more fun to see what happens if we
 simply, well, don't.
 
@@ -38,7 +38,7 @@ a thread tries to `front()` or `pop()` an empty `std::queue<>`.
 I figured that if stl's queue throws an exception for such a case, then it will be thrown through my
 SafeQueue which is good enough. However, if it doesn't, I have a real problem since while a single
 thread using a queue can call `empty()` and be sure that the queue is indeed empty after the call,
-in multi-threaded environment the moment the `empty()` method returns with an answers, this answer
+in multi-threaded environment the moment the `empty()` method returns with an answer, this answer
 does not qualify anymore and might be wrong (imagine a context switch right after `empty()`
 returns).
 
@@ -79,12 +79,12 @@ int  main() {
 
 *For the record, I tried this on gcc 4.4.7 (Centos 6.4)*
 
-The question that was most interesting to me was what value could f.x have? My first example didn't
+The question that was most interesting to me was what value could `f.x` have? My first example didn't
 include prints in the c'tors (and didn't even include a non-default copy c'tor). I added the copy
 c'tor and the prints after this program **printed 0**!
 
-Weird huh?<br>
-Cause `Foo`'s `x` is initialized to 3 in the c'tor.
+Weird, huh?<br>
+Since `Foo`'s `x` is initialized to 3 in the c'tor.
 When I ran the full example (with copy c'tor and c'tors prints) I got the following result:
 
 >in copy c'tor<br>
