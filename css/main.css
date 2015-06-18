@@ -133,12 +133,12 @@ a:visited { color: #205caa; }
   top: 3px;
 }
 
-.icon {
+.svg-icon {
     color: #C2C2C2
     fill: #C2C2C2
 }
 
-.icon:hover {
+.svg-icon:hover {
   border-radius: 100%;
   -webkit-transform: scale(1.25);
   -ms-transform: scale(1.25);
