@@ -109,9 +109,12 @@ This allow us to implement our module the following way:
 class HippieModule {
 public:
     HippieModule() :
-        peaceSubscription(new SubscriptionDelegate<Peace, HippieModule, &HippieModule::handlePeace>),
-        LoveSubscription (new SubscriptionDelegate<Love,  HippieModule, &HippieModule::handleLove>),
-        HopeSubscription (new SubscriptionDelegate<Hope,  HippieModule, &HippieModule::handleHope>) {
+        peaceSubscription(new SubscriptionDelegate<Peace, HippieModule,
+            &HippieModule::handlePeace>(this)),
+        LoveSubscription(new SubscriptionDelegate<Love, HippieModule,
+            &HippieModule::handleLove>(this)),
+        HopeSubscription(new SubscriptionDelegate<Hope, HippieModule,
+            &HippieModule::handleHope>(this)) {
     }
 
     virtual bool handlePeace(std::shared_ptr<const Peace> message) {
