@@ -68,11 +68,13 @@ Remedy
 
 You feel that itch?
 It could be extremely comfortable if we could just implement those 3 (functor-like) functions inside
-our module. We know we can't refrain from inheriting those 3 classes. Using multiple inheritance
-will be dead ugly, and might not work if we want to subscribe the same message type several times,
-or if `Subscription`'s is not a pure virtual class (aka Interface in other languages).
+our module. <br>
+On the one hand we know we can't refrain from inheriting those 3 classes. However, on the other hand
+multiple inheritance will be dead ugly, and might not work if we want to subscribe to the same
+message type several times, or if `Subscription`'s is not a pure virtual class (aka Interface
+in other languages).
 
-What we can do, is use a **template pointer to function**.<br>
+What we *can* do, is use a **template pointer to function**.<br>
 The idea would be to 'hide' the inheritance with template instantiation and implement all 3
 functions inside our module.
 
@@ -99,7 +101,7 @@ This class inherits `Subscription` and aside from taking a template `TMessage` (
 `Subscription` class), this class takes a template `TCaller` which will be the class containing
 the implementation of `handle(...)`, and a template function of `TCaller` with the same signature
 as our `handle(...)` method (taking a `shared_ptr` of a `const TMessage`).<br>
-When handle of the delegate class is called, it calls `TCaller.TMethod()`.
+When handle of this delegate class is called, it call will call `TCaller.TMethod()`.
 
 This allow us to implement our module the following way:
 
@@ -131,10 +133,10 @@ protected:
 
 Note that:
 
-* we *could* create the subscription as non-pointer members, but we would have to paste
+* we *could* create the subscriptions as non-pointer members, but we would have to paste
 their long definition inside the class (instead of in the c'tor which is usually in the `cpp` file
 rather than the `h`) - it's a matter of taste.
 
 * Since a different class will be instantiated for *every* different subscription function in the
-module, we could implement a subscription to the *same* message several times - we just need to
+module, we could implement a subscription to the *same* message type several times - we just need to
 name the handling functions differently.
